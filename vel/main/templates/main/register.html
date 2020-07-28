@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% block frame %}
+    <div class="small_form">
+        <div class="jumbotron small_jumb purple_jumb">
+            <h2>Faça seu cadastro</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ register.as_p }}
+
+                <input class="btn btn-info center_content" type="submit" value="Cadastrar">
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

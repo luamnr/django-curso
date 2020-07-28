@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% block frame %}
+<!--  -->
+    <div class="jumbotron purple_jumb">
+        <h1>
+            Lorem Ipsum
+        </h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus magna non dui malesuada auctor. Maecenas tellus risus, rhoncus in tincidunt ac, molestie ac orci. Nullam ut metus vitae tortor vehicula posuere quis quis nulla. Suspendisse sodales nibh ac justo tristique, ut elementum felis commodo. Suspendisse non mollis felis. Curabitur id iaculis ante. Mauris posuere justo eu ante molestie, a hendrerit quam congue. Curabitur nec nisl vehicula, dictum sapien eget, pulvinar libero. Fusce quis porta libero, at luctus enim. Nunc id nulla posuere sapien congue volutpat ornare non mauris. Aenean dictum sapien lacus, non laoreet nisl placerat nec.
+            Maecenas faucibus mollis convallis. Vestibulum in ultricies lectus, id dapibus justo. Morbi dictum viverra lorem, vel faucibus libero pretium in. Vestibulum eget lectus tincidunt, scelerisque quam vitae, malesuada ante. Aliquam fermentum vulputate eros sed suscipit. Vivamus nec dui id ex aliquet faucibus quis a risus. Vivamus leo erat, tincidunt id purus sit amet, finibus vestibulum nisi. In ligula tortor, lobortis at arcu at, gravida tempus orci. Integer non varius arcu. Nunc tincidunt imperdiet sagittis. Vestibulum vitae nisi non velit elementum blandit eu id ante. Morbi consequat leo at pretium tempus. Maecenas magna leo, sollicitudin vitae facilisis eu, tincidunt sit amet metus. Cras venenatis nisi eget ipsum tristique mollis. Duis ut ultrices sapien.
+        </p>
+        {% if user.is.authenticated %}
+        {% csrf_token %}
+
+        <h1>LOGADO!</h1>
+        {% endif %}
+    </div>
+
+
+
+
+
+{% endblock %}
